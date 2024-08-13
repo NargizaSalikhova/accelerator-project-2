@@ -14,12 +14,13 @@
 
   <body class="page-body">
     <header class="main-header" data-test="header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+
+      <nav class="main-header__nav nav">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
+        <div class="nav__container">
+          <ul class="nav__list site-list">
             <li class="site-list__item">
               <a href="#tours">Туры</a>
             </li>
@@ -41,9 +42,11 @@
           </ul>
         </div>
       </nav>
+
       <a class="main-header__logo logo">
-        <img src="img/logotype.svg" width="142" height="42" alt="Логотип компании Lifetour.">
+        <img src="img/logotype-white.svg" width="142" height="42" alt="Логотип компании Lifetour.">
       </a>
+
       <a class="main-header__phone" href="tel:+78000000000">8 800 000-00-00</a>
     </header>
 
@@ -53,7 +56,7 @@
       <!-- Блок Промо -->
       <section class="hero" data-test="hero">
         <div class="hero__container swiper">
-          <h2 class="visually-hidden">Наши туры</h2>
+          <h2 class="visually-hidden">Наши туристические локации</h2>
 
           <ul class="hero__list swiper-wrapper">
             <li class="hero__item hero__item--caucasus swiper-slide">
@@ -116,8 +119,8 @@
       <article class="tours" id="tours" data-test="tours">
         <div class="tours__container swiper">
           <header class="tours__headline headline">
-            <h2 class="tours__title">Ближайшие туры</h2>
-            <div class="tours__swiper-buttons swiper-buttons">
+            <h2 class="tours__title headline__title">Ближайшие туры</h2>
+            <div class="tours__swiper-buttons headline__buttons swiper-buttons">
               <button class="swiper-buttons__prev swiper-button-prev" type="button">
                 <span class="visually-hidden">Назад</span>
               </button>
@@ -139,7 +142,7 @@
                 <img src="img/tours/tour-1-mobile.jpg" srcset="img/tours/tour-1-mobile@2x.jpg 2x" width="290" height="416" alt="Горные хребты Эльбруса.">
               </picture>
 
-              <div class="tours__info info">
+              <div class="tours__info info"> <!-- info????? -->
                 <span class="info__place">Кавказ</span>
                 <div class="info__stats">
                   <span class="info__stats-days">4 дня</span>
@@ -311,8 +314,8 @@
           <div class="training__swiper swiper">
 
             <div class="training__headline headline">
-              <h3 class="training__title">Наши инструкторы</h3>
-              <div class="training__swiper-buttons swiper-buttons">
+              <h3 class="training__title headline__title">Наши инструкторы</h3>
+              <div class="training__swiper-buttons headline__buttons swiper-buttons">
                 <button class="swiper-buttons__prev swiper-button-prev" type="button">
                   <span class="visually-hidden">Назад</span>
                 </button>
@@ -322,8 +325,8 @@
               </div>
             </div>
 
-            <ul class="training__list swiper-wrapper">
-              <li class="training__item swiper-slide">
+            <ul class="training__list trainers swiper-wrapper">
+              <li class="trainers__item swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/trainers/trainer-1-desk.webp 1x, img/trainers/trainer-1-desk@2x.webp 2x">
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/webp" srcset="img/trainers/trainer-1-tab.webp 1x, img/trainers/trainer-1-tab@2x.webp 2x">
@@ -332,14 +335,14 @@
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/trainers/trainer-1-tab.jpg 1x, img/trainers/trainer-1-tab@2x.jpg 2x">
                   <img src="img/trainers/trainer-1-mob.jpg" srcset="img/trainers/trainer-1-mob@2x.jpg 2x" width="260" height="200" alt="Вершины Кавказа.">
                 </picture>
-                <a class="training__social-link" href="https://vk.com/htmlacademy">
+                <a class="trainers__social-link social-link" href="https://vk.com/htmlacademy">
                   <b>Надежда <br>Колесниченко</b>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
                 <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
               </li>
 
-              <li class="training__item swiper-slide">
+              <li class="trainers__item swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/trainers/trainer-2-desk.webp 1x, img/trainers/trainer-2-desk@2x.webp 2x">
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/webp" srcset="img/trainers/trainer-2-tab.webp 1x, img/trainers/trainer-2-tab@2x.webp 2x">
@@ -348,14 +351,14 @@
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/trainers/trainer-2-tab.jpg 1x, img/trainers/trainer-2-tab@2x.jpg 2x">
                   <img src="img/trainers/trainer-2-mob.jpg" srcset="img/trainers/trainer-2-mob@2x.jpg 2x" width="260" height="200" alt="Вершины Кавказа.">
                 </picture>
-                <a class="training__social-link social-link" href="https://vk.com/htmlacademy">
+                <a class="trainers__social-link social-link" href="https://vk.com/htmlacademy">
                   <b>Светлана <br>Афиногенова</b>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
                 <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
               </li>
 
-              <li class="training__item swiper-slide">
+              <li class="trainers__item swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/trainers/trainer-3-desk.webp 1x, img/trainers/trainer-3-desk@2x.webp 2x">
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/webp" srcset="img/trainers/trainer-3-tab.webp 1x, img/trainers/trainer-3-tab@2x.webp 2x">
@@ -364,14 +367,14 @@
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/trainers/trainer-3-tab.jpg 1x, img/trainers/trainer-3-tab@2x.jpg 2x">
                   <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="260" height="200" alt="Вершины Кавказа.">
                 </picture>
-                <a class="training__social-link social-link" href="https://vk.com/htmlacademy">
+                <a class="trainers__social-link social-link" href="https://vk.com/htmlacademy">
                   <b>Александр <br>Прокофьев</b>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
                 <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
               </li>
 
-              <li class="training__item swiper-slide">
+              <li class="trainers__item swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/trainers/trainer-4-desk.webp 1x, img/trainers/trainer-4-desk@2x.webp 2x">
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/webp" srcset="img/trainers/trainer-4-tab.webp 1x, img/trainers/trainer-4-tab@2x.webp 2x">
@@ -380,14 +383,14 @@
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/trainers/trainer-4-tab.jpg 1x, img/trainers/trainer-4-tab@2x.jpg 2x">
                   <img src="img/trainers/trainer-4-mob.jpg" srcset="img/trainers/trainer-4-mob@2x.jpg 2x" width="260" height="200" alt="Вершины Кавказа.">
                 </picture>
-                <a class="training__social-link social-link" href="https://vk.com/htmlacademy">
+                <a class="trainers__social-link social-link" href="https://vk.com/htmlacademy">
                   <b>Федор <br>Кайгородов</b>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
                 <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
               </li>
 
-              <li class="training__item swiper-slide">
+              <li class="trainers__item swiper-slide">
                 <picture>
                   <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/trainers/trainer-5-desk.webp 1x, img/trainers/trainer-5-desk@2x.webp 2x">
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/webp" srcset="img/trainers/trainer-5-tab.webp 1x, img/trainers/trainer-5-tab@2x.webp 2x">
@@ -396,7 +399,7 @@
                   <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/trainers/trainer-5-tab.jpg 1x, img/trainers/trainer-5-tab@2x.jpg 2x">
                   <img src="img/trainers/trainer-5-mob.jpg" srcset="img/trainers/trainer-5-mob@2x.jpg 2x" width="260" height="200" alt="Вершины Кавказа.">
                 </picture>
-                <a class="training__social-link social-link" href="https://vk.com/htmlacademy">
+                <a class="trainers__social-link social-link" href="https://vk.com/htmlacademy">
                   <b>Даниэль <br>Васнецов</b>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
@@ -405,13 +408,13 @@
             </ul>
           </div>
 
-          <div class="training__process process">
-            <h4 class="process__title">Процесс обучения</h4>
-            <ol class="process__list">
-              <li class="process__item process__item--map">Изучение спортивного туристского движения</li>
-              <li class="process__item process__item--equipment">Подготовка и техническое снаряжение в походах</li>
-              <li class="process__item process__item--lectures">Лекции по окружающей среде, экологии и гигиене</li>
-              <li class="process__item process__item--obstacles">Разъяснение сложности горных препятствий</li>
+          <div class="training__instruction instruction">
+            <h4 class="instruction__title">Процесс обучения</h4>
+            <ol class="instruction__list">
+              <li class="instruction__item instruction__item--map">Изучение спортивного туристского движения</li>
+              <li class="instruction__item instruction__item--equipment">Подготовка и техническое снаряжение в походах</li>
+              <li class="instruction__item instruction__item--lectures">Лекции по окружающей среде, экологии и гигиене</li>
+              <li class="instruction__item instruction__item--obstacles">Разъяснение сложности горных препятствий</li>
             </ol>
           </div>
         </div>
@@ -437,8 +440,8 @@
         <div class="reviews__container swiper">
 
           <div class="reviews__headline headline">
-            <h3 class="reviews__title">Наши инструкторы</h3>
-            <div class="reviews__swiper-buttons swiper-buttons">
+            <h3 class="reviews__title headline__title">Отзывы</h3>
+            <div class="reviews__swiper-buttons headline__buttons swiper-buttons">
               <button class="swiper-buttons__prev swiper-button-prev" type="button">
                 <span class="visually-hidden">Назад</span>
               </button>
@@ -450,7 +453,14 @@
 
           <div class="reviews__list swiper-wrapper">
             <blockquote class="reviews__item swiper-slide">
-              <img>
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="img/reviews/author-1-desk.webp 1x, img/reviews/author-1-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="img/reviews/author-1-tab.webp 1x, img/reviews/author-1-tab@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/reviews/author-1-mob.webp 1x, img/reviews/author-1-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="img/reviews/author-1-desk.jpg 1x, img/reviews/author-1-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="img/reviews/author-1-tab.jpg 1x, img/reviews/author-1-tab@2x.jpg 2x">
+                <img src="img/reviews/author-1-mob.jpg" srcset="img/reviews/author-1-mob@2x.jpg 2x" width="250" height="169" alt="Вершины Кавказа.">
+              </picture>
               <div class="reviews__author-info">
                 <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
                   С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
@@ -460,7 +470,14 @@
             </blockquote>
 
             <blockquote class="reviews__item swiper-slide">
-              <img>
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="img/reviews/author-2-desk.webp 1x, img/reviews/author-2-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="img/reviews/author-2-tab.webp 1x, img/reviews/author-2-tab@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/reviews/author-2-mob.webp 1x, img/reviews/author-2-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="img/reviews/author-2-desk.jpg 1x, img/reviews/author-2-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="img/reviews/author-2-tab.jpg 1x, img/reviews/author-2-tab@2x.jpg 2x">
+                <img src="img/reviews/author-2-mob.jpg" srcset="img/reviews/author-2-mob@2x.jpg 2x" width="250" height="169" alt="Вершины Кавказа.">
+              </picture>
               <div class="reviews__author-info">
                 <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
                   Было очень интересно!
@@ -472,7 +489,14 @@
             </blockquote>
 
             <blockquote class="reviews__item swiper-slide">
-              <img>
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="img/reviews/author-3-desk.webp 1x, img/reviews/author-3-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="img/reviews/author-3-tab.webp 1x, img/reviews/author-3-tab@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/reviews/author-3-mob.webp 1x, img/reviews/author-3-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="img/reviews/author-3-desk.jpg 1x, img/reviews/author-3-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="img/reviews/author-3-tab.jpg 1x, img/reviews/author-3-tab@2x.jpg 2x">
+                <img src="img/reviews/author-3-mob.jpg" srcset="img/reviews/author-3-mob@2x.jpg 2x" width="250" height="169" alt="Вершины Кавказа.">
+              </picture>
               <div class="reviews__author-info">
                 <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.
                   Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
@@ -482,7 +506,14 @@
             </blockquote>
 
             <blockquote class="reviews__item swiper-slide">
-              <img>
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="img/reviews/author-4-desk.webp 1x, img/reviews/author-4-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="img/reviews/author-4-tab.webp 1x, img/reviews/author-4-tab@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/reviews/author-4-mob.webp 1x, img/reviews/author-4-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="img/reviews/author-4-desk.jpg 1x, img/reviews/author-4-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="img/reviews/author-4-tab.jpg 1x, img/reviews/author-4-tab@2x.jpg 2x">
+                <img src="img/reviews/author-4-mob.jpg" srcset="img/reviews/author-4-mob@2x.jpg 2x" width="250" height="169" alt="Вершины Кавказа.">
+              </picture>
               <div class="reviews__author-info">
                 <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
                   У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
@@ -646,9 +677,9 @@
     </main>
 
     <footer class="main-footer" id="footer" data-test="footer">
-      <div class="main-footer__container">
+      <div class="main-footer__container">  <!--???-->
 
-        <div class="contacts">
+        <div class="main-footer__contacts contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
 
@@ -681,33 +712,33 @@
           </picture>
         </div>
 
-        <div class="footer">
-          <a class="main-footer__logo logo">
+        <div class="main-footer__footer footer">
+          <a class="footer__logo logo">
             <img src="img/logotype.svg" width="142" height="42" alt="Логотип компании Lifetour.">
           </a>
 
-          <ul class="main-footer__nav-list site-list site-list--footer">
-            <li class="site-list__item">
+          <ul class="footer__nav-list site-list site-list--footer">
+            <li class="site-list__item site-list__item--footer">
               <a href="#tours">Туры</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--footer">
               <a href="#training">Обучение</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--footer">
               <a href="#about">О нас</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--footer">
               <a href="#reviews">Отзывы</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--footer">
               <a href="#gallery">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--footer">
               <a href="#footer">Контакты</a>
             </li>
           </ul>
 
-          <ul class="main-footer__social social">
+          <ul class="footer__social social">
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -725,7 +756,7 @@
             </li>
           </ul>
 
-          <a class="main-footer__confidentiality" href="#">Политика конфиденциальности</a>
+          <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
@@ -736,11 +767,14 @@
 </html>
 
     <!-- пример использования спрайта -->
+
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
+
     <!-- примеры требуемых атрибутов data-test="*" -->
+
     <!-- <div >header</div>
     <div >hero</div>
     <div >tours</div>

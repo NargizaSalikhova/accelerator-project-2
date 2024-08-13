@@ -1,0 +1,10 @@
+.site-list__item a {
+  line-height: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+}
+
+.site-list__item--footer a {
+  color: inherit;
+}

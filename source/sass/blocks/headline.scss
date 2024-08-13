@@ -1,0 +1,11 @@
+.headline__title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
