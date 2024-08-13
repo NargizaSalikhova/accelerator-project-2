@@ -1,0 +1,22 @@
+.main-header {
+  padding: 15px;
+  background-color: $blue-bc;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1200px;
+  }
+}
+
+.main-header__phone {
+  font-weight: 600;
+  line-height: 14px;
+  text-align: right;
+  color: $white;
+
+  text-decoration: none;
+}

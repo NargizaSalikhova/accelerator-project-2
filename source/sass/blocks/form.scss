@@ -1,0 +1,30 @@
+.form__container h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  // color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.form__container p {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  // color: $white;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 16px;
+
+  opacity: 0.5;
+}
+
+.form__button {
+  @include button;
+}

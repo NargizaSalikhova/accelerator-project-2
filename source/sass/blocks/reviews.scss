@@ -1,0 +1,22 @@
+.reviews__author-info p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.reviews__author-name {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.reviews__autor-data {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}

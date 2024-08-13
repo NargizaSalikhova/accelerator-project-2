@@ -1,0 +1,22 @@
+.instruction__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.instruction__item {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

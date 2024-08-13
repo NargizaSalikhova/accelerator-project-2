@@ -2,3 +2,36 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// @import "vendor/swiper.css";
+
+/* GLOBAL */
+@import "global/variables";
+@import "global/mixins"; // ??
+@import "global/fonts";
+@import "global/global"; // ??
+@import "global/visually-hidden";
+
+/* BLOCKS */
+@import "blocks/main-header";
+// @import "blocks/main-nav";
+@import "blocks/site-list";
+// @import "blocks/logo";
+@import "blocks/hero";
+@import "blocks/tours";
+@import "blocks/headline";
+@import "blocks/info";
+@import "blocks/details";
+@import "blocks/training";
+@import "blocks/trainers";
+// @import "blocks/social-link";
+@import "blocks/instruction";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/advantages";
+@import "blocks/gallery";
+@import "blocks/form";
+// @import "blocks/main-footer";
+@import "blocks/contacts";
+@import "blocks/footer";
+// @import "blocks/social";

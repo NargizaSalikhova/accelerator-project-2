@@ -1,0 +1,25 @@
+.hero__item h3 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    line-height: 56px;
+  }
+}
+
+.hero__item p {
+  font-size: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.hero__button {
+  text-decoration: none;
+
+  @include button;
+}

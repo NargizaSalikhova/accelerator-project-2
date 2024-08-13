@@ -1,0 +1,21 @@
+.trainers__social-link {
+  text-decoration: none;
+}
+
+.trainers__social-link b {
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.trainers__item p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
